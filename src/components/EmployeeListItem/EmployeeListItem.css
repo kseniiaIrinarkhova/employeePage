@@ -1,0 +1,38 @@
+.employee-list-card {
+    width: 98%;
+    height: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 17px 2px 27px 1px rgba(0, 0, 0, 0.68)
+}
+
+.photo {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    border: 2px black solid;
+    border-radius: 50%;
+}
+
+.photo>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info {
+    text-align: left;
+    padding-left: 20px;
+    width: 100%
+}
+
+.employee-list-card:hover .photo {
+    box-shadow: 7px 2px 30px 1px rgba(0, 0, 0, 0.68)
+}
+
+.active{
+    box-shadow: 7px 2px 30px 1px rgba(0, 0, 0, 0.68)
+}
