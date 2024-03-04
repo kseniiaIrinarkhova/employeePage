@@ -1,0 +1,11 @@
+form{
+    height: 100px;
+    display: block;
+    padding-left: 25px;
+}
+
+form >input{
+height: 98%;
+width: 95%;
+
+}
