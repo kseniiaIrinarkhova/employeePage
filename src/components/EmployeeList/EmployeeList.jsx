@@ -1,4 +1,4 @@
-import EmployeeListItem from "../EmployeeListItem/EmployeeListItem";
+import EmployeeCard from "../EmployeeCard/EmployeeCard";
 import employees from '../../data/employees';
 import './EmployeeList.css'
 
@@ -8,7 +8,8 @@ export default function EmployeeList() {
         let isActive = false;
         if(el.img == "Taylor") isActive = true;
 
-        return <EmployeeListItem name={el.name} key={el.id} job={el.job} img={el.img} isActive={isActive}/>})
+        return <li className="employee-list-card" key={el.id}><EmployeeCard name={el.name} job={el.job} img={el.img} isActive={isActive} /></li>
+})
 
     return (
         <>

@@ -9,7 +9,7 @@ export default function EmployeePage() {
         <div className="page">
             <Header title="Employee" />
             <div className="employee">
-            <EmployeeCard name={employees[1].name} job={employees[1].job} />
+            <EmployeeCard name={employees[1].name} job={employees[1].job}  img={employees[1].img} size="b" />
             <EmployeeContacts id={2} />
             </div>
         </div>
