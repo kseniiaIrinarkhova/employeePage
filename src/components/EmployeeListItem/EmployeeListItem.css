@@ -5,7 +5,7 @@
     flex-flow: row nowrap;
     border: 2px solid black;
     border-radius: 15px;
-    box-shadow: 17px 2px 27px 1px rgba(0, 0, 0, 0.68)
+    box-shadow: inset -11px -2px 25px -3px rgba(0, 0, 0, 0.75);
 }
 
 .photo {

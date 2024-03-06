@@ -1,6 +1,7 @@
 #root {
   margin: auto;
-  padding: 2rem;
+  padding: 5rem;
+  height: fit-content;
   display:flex;
   justify-content: center;
   text-align: center;
@@ -10,11 +11,12 @@
 .page{
   border: 3px black solid;
   width: 50%;
-  height: 70vh;
+  height: 100%;
   border-radius: 10px;
 }
 
 .container{
+  padding: 2rem;
   border: 4px red double;
   display: flex;
   justify-content: center;
