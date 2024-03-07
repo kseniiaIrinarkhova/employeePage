@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 function App() {
 
-const[selectedEmployeeId, setSelectedEmployeeId] = useState(employees[0].id);
+const[selectedEmployeeId, setSelectedEmployeeId] = useState(undefined);
   return (
     <>
       <div className="container">
