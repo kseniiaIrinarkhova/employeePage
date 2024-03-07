@@ -17,9 +17,10 @@ const employeePhotos = {
 
 export default function EmployeeCard({ job, name, img, isActive, size }) {
     let className = "card-photo";
+    //change style for selected list item
     if (isActive) className += " active";
     let cardClassName = "employee-card";
-
+    //change card styling - for employee page it should be twice bigger
     if (size) cardClassName += " doubled";
     return (
         <>

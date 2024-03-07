@@ -6,8 +6,9 @@ import employees from './data/employees';
 import { useState } from 'react';
 
 function App() {
-
+//state that represent selected employee ID
 const[selectedEmployeeId, setSelectedEmployeeId] = useState(undefined);
+
   return (
     <>
       <div className="container">
