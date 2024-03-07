@@ -6,8 +6,8 @@ export default function HomePage({employees, selectedEmployeeId, setSelectedEmpl
     return (
         <div className="page">
             <Header title ="Employee Directory" />
-            <SearchBar selectedEmployeeId={selectedEmployeeId} onSelectedEmployeeChanged={setSelectedEmployeeId} />
-            <EmployeeList employees={employees} selectedEmployeeId={selectedEmployeeId} onSelectedEmployeeChanged={setSelectedEmployeeId} />
+            <SearchBar selectedEmployeeId={selectedEmployeeId} setSelectedEmployeeId={setSelectedEmployeeId} />
+            <EmployeeList employees={employees} selectedEmployeeId={selectedEmployeeId} setSelectedEmployeeId={setSelectedEmployeeId} />
         </div>
     );
 }

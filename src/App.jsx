@@ -11,7 +11,7 @@ const[selectedEmployeeId, setSelectedEmployeeId] = useState(employees[0].id);
   return (
     <>
       <div className="container">
-        <HomePage employees={employees} selectedEmployeeId={selectedEmployeeId} onSelectedEmployeeChanged={setSelectedEmployeeId}/>
+        <HomePage employees={employees} selectedEmployeeId={selectedEmployeeId} setSelectedEmployeeId={setSelectedEmployeeId}/>
         <EmployeePage employee={employees.find((el)=> el.id == selectedEmployeeId)}/>
       </div>
     </>

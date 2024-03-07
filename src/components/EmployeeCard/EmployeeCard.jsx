@@ -23,7 +23,7 @@ export default function EmployeeCard({ job, name, img, isActive, size }) {
     if (size) cardClassName += " doubled";
     return (
         <>
-            <div className={cardClassName} >
+            <div className={cardClassName}>
                 <div className={className} ><img src={employeePhotos[img]} alt={name} /></div>
                 <div className="card-info">
                     <h4>{name}</h4>
