@@ -1,16 +1,15 @@
 import Header from "../Header/Header";
 import EmployeeCard from "../EmployeeCard/EmployeeCard";
-import employees from '../../data/employees';
 import EmployeeContacts from "../EmployeeContacts/EmployeeContacts";
 import './EmployeePage.css'
 
-export default function EmployeePage() {
+export default function EmployeePage({ employee }) {
     return (
         <div className="page">
             <Header title="Employee" />
             <div className="employee">
-            <EmployeeCard name={employees[1].name} job={employees[1].job}  img={employees[1].img} size="b" />
-            <EmployeeContacts id={2} />
+                <EmployeeCard name={employee.name} job={employee.job} img={employee.img} size="b" />
+                <EmployeeContacts contacts={employee.contacts} />
             </div>
         </div>
     );

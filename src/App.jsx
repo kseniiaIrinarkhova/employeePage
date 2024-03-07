@@ -2,15 +2,17 @@
 import './App.css'
 import HomePage from './components/HomePage/HomePage';
 import EmployeePage from './components/EmployeePage/EmployeePage';
+import employees from './data/employees';
+import { useState } from 'react';
 
 function App() {
 
-
+const[selectedEmployeeId, setSelectedEmployeeId] = useState(employees[0].id);
   return (
     <>
       <div className="container">
-        <HomePage />
-        <EmployeePage />
+        <HomePage employees={employees} selectedEmployeeId={selectedEmployeeId} onSelectedEmployeeChanged={setSelectedEmployeeId}/>
+        <EmployeePage employee={employees.find((el)=> el.id == selectedEmployeeId)}/>
       </div>
     </>
   )
